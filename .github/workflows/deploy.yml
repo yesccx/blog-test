@@ -46,7 +46,7 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          repository: yesccx/blog
+          repository: yesccx/blog-test
           branch: static
           directory: hugo/public
           force: true
@@ -58,7 +58,7 @@ jobs:
       - name: Git checkout blog
         uses: actions/checkout@v3
         with:
-          repository: yesccx/blog
+          repository: yesccx/blog-test
           path: blog
           ref: static
 
